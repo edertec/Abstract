@@ -1,8 +1,9 @@
 import openai
 import asyncio
+import config
 
 # Set up the OpenAI API key
-openai.api_key = 'sk-teUzuN70Nh0-zJZry6GWUA2v3y1zU6VQwCKqQOsL5aT3BlbkFJQ4zfosPYAfYhp3N4EZk0OSGJsT3PCw7viVhI3vj8gA'
+openai.api_key = config.OPENAI_KEY
 
 # Use an async function for the API call
 async def get_abstract_analysis(abstract_text):
